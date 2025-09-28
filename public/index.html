@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>English · 3 a day (Global)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://api.dictionaryapi.dev">
+    <link rel="preconnect" href="https://api.datamuse.com">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>English · 3 a day</h1>
+        <div class="date" id="dateLabel"></div>
+    </header>
+
+    <main class="layout">
+        <aside class="history">
+            <h2>History</h2>
+            <ul id="historyList" class="history-list"></ul>
+            <button id="exportBtn" class="ghost">Export history (.json)</button>
+        </aside>
+
+        <section class="today">
+            <h2>Today’s Words</h2>
+            <div id="todayWords" class="cards"></div>
+            <p class="note">
+                3 global words are rolled at midnight IST and shown to everyone.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Built with HTML/CSS/JS · Global data via Supabase · Extras via
+        <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">Free Dictionary API</a> &
+        <a href="https://www.datamuse.com/api/" target="_blank" rel="noopener">Datamuse</a>.
+    </footer>
+
+    <!-- app.js loads supabase-js dynamically inside -->
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
